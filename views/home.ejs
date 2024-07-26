@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Home</h1>
+    <a href="/login">Login</a>
+    <% if (session_id) { %>
+    <p>Hi <%=username%>!</p>
+    <p>Session ID: <%= session_id %></p>
+    <% } %>
+  </body>
+</html>
